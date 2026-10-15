@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "ExpenseGenius AI",
+    "slug": "expensegenius-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "scheme": "expensegenius",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.expensegenius.mobile"
+    },
+    "android": {
+      "package": "com.expensegenius.mobile",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "CAMERA"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Allow ExpenseGenius AI to take photos of receipts.",
+          "photosPermission": "Allow ExpenseGenius AI to select receipt photos."
+        }
+      ],
+      "expo-build-properties"
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
